@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Finance Tracker</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="logo"><img src="Logo.png" alt=""></div>
+      <div id="dropdown">
+        <button>⋮</button>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="records.html">Search</a></li>
+          <li><a href="form.html">Transaction</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>      
+    </nav>
+  </header>
+
+  <main>
+  <h1>Settings</h1>
+  <form id="settingsForm">
+    <label for="baseCurrency">Base Currency:</label>
+    <select id="baseCurrency">
+      <option value="USD">USD</option>
+      <option value="RWF">RWF</option>
+      <option value="EUR">EUR</option>
+    </select>
+
+    <label for="conversionRate1">Rate to Currency 1:</label>
+    <input type="number" id="conversionRate1" />
+
+    <label for="conversionRate2">Rate to Currency 2:</label>
+    <input type="number" id="conversionRate2" />
+
+    <button type="submit">Save Settings</button>
+  </form>
+</main>
+
+
+
+
+  <footer>
+    <p>&copy; 2025 Gilbert | <a href="mailto:g.ntivunwa@alustudent.com">Contact</a></p>
+  </footer>
+</body>
+<script src="scripts/settings.js" type="module"></script>
+</html>

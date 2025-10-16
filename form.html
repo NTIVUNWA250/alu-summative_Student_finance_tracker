@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Finance Tracker</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+     <nav>
+      <div id="logo"><img src="Logo.png" alt=""></div>
+      <div id="dropdown">
+        <button>⋮</button>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="records.html">Search</a></li>
+          <li><a href="form.html">Transaction</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <h1>Add or Edit Transaction</h1>
+  <form id="transactionForm" novalidate>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required />
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" required />
+
+    <label for="category">Category:</label>
+    <select id="category" name="category">
+      <option>Food</option>
+      <option>Books</option>
+      <option>Transport</option>
+      <option>Entertainment</option>
+      <option>Fees</option>
+      <option>Other</option>
+    </select>
+    <!-- Hidden input for custom category -->
+    <input type="text" id="customCategory" name="customCategory" placeholder="Enter custom category" style="display: none;">  
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required />
+
+    <button type="submit">Save</button>
+  </form>
+
+  <div role="status" aria-live="polite" id="formStatus"></div>
+</main>
+
+
+
+  <footer>
+    <p>&copy; 2025 Gilbert | <a href="mailto:g.ntivunwa@alustudent.com">Contact</a></p>
+  </footer>
+</body>
+<script src="scripts/form.js" type="module"></script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Finance Tracker</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="logo"><img src="Logo.png" alt=""></div>
+      <div id="dropdown">
+        <button>⋮</button>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="records.html">Search</a></li>
+          <li><a href="form.html">Transaction</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Dashboard</h1>
+    <section aria-labelledby="stats-heading">
+      <h2 id="stats-heading">Stats Overview</h2>
+      <div id="stats-container" role="region" aria-live="polite">
+        <!-- JS will inject total, sum, top category, trend -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gilbert | <a href="mailto:g.ntivunwa@alustudent.com">Contact</a></p>
+  </footer>
+</body>
+<script src="scripts/dashboard.js" type="module"></script>
+</html>

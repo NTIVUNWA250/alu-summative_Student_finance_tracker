@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Finance Tracker</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+     <nav>
+      <div id="logo"><img src="Logo.png" alt=""></div>
+      <div id="dropdown">
+        <button>⋮</button>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="records.html">Search</a></li>
+          <li><a href="form.html">Transaction</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <h1>Transaction Records</h1>
+  <section>
+    <label for="search"> </label>
+    <input type="text" id="search"/>
+    <button id="searchBtn">Search</button>
+  </section>
+
+  <section>
+    <table id="recordsTable">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS will render rows here -->
+      </tbody>
+    </table>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Gilbert | <a href="mailto:g.ntivunwa@alustudent.com">Contact</a></p>
+  </footer>
+</body>
+<script src="scripts/records.js" type="module"></script>
+</html>
