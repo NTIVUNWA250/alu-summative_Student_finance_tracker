@@ -88,7 +88,7 @@ h1{
 }
 h1, h2 {
   margin-bottom: 1rem;
-  color: #004080;
+  color: #086bcd;
 }
 
 #stats-container {
@@ -156,6 +156,20 @@ button {
 
 button:hover {
   background-color: #2152b2;
+}
+
+button.delete-btn {
+  background-color: #e53935; 
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.delete-btn:hover {
+  background-color: #c62828; 
 }
 
 #settingsForm {
@@ -339,3 +353,65 @@ p footer a{
   padding: 1rem;
   border-radius: 6px;
 }
+
+
+
+
+/* Light mode defaults */
+body {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+main {
+  background-color: #f0f0f0; /* soft grey */
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Dark mode override */
+body.dark-mode main {
+  background-color: #403f3f; /* darker grey for dark mode */
+  color: #847e7e;
+}
+
+form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  background-color: #121212;
+  color: #615d5d;
+}
+
+body.dark-mode form {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode section,
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+/* Toggle button styling */
+#darkModeToggle {
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#darkModeToggle:hover {
+  background-color: #333;
+}
+
